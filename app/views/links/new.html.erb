@@ -1,0 +1,8 @@
+<%= form_for @link do |f| %>
+  <%= render "error_messages", target: @link %>
+
+  <%= f.text_field "title" %>
+  <%= f.text_field "url" %>
+  <%= f.submit "Submit!" %>
+<% end %>
+

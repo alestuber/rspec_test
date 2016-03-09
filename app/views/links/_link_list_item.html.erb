@@ -1,0 +1,9 @@
+<%= content_tag_for :li, link do %>
+  <%= link_to "Upvote", [:upvote, link], method: :patch %>
+  <div data-role="score"><%= link.score %></div>
+  <%= link_to "Downvote", [:downvote, link], method: :patch %>
+  <br>
+  <br>
+  <%= render link %>
+  <br>
+<% end %>
